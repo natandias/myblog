@@ -1,0 +1,19 @@
+{
+  "name": "MyVuepressBlog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev blog --no-cache",
+    "docs:build": "vuepress build blog"
+  },
+  "dependencies": {
+    "@vuepress/theme-blog": "^2.3.2",
+    "vuepress": "^1.6.0",
+    "vuepress-plugin-seo": "^0.1.4"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.6.0",
+    "@vuepress/plugin-medium-zoom": "^1.6.0"
+  }
+}
