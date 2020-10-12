@@ -3,6 +3,7 @@ module.exports = {
   theme: '@vuepress/theme-blog',
   plugins: ['vuepress-plugin-seo', '@vuepress/back-to-top', '@vuepress/medium-zoom'],
   shouldPrefetch: () => false,
+  base: "/myblog/",
   themeConfig: {
     dateFormat: 'DD-MM-YYYY',
     nav: [
