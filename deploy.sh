@@ -4,7 +4,7 @@
 set -e
 
 # build
-npm run docs:build
+yarn docs:build
 
 # navigate into the build output directory
 cd blog/.vuepress/dist
@@ -13,13 +13,13 @@ cd blog/.vuepress/dist
 # echo 'www.example.com' > CNAME
 
 git init
-git add -A
+git add .
 git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:natandias/myblog.git main
+git push -f git@github.com:natandias/myblog.git master:gh-pages
 
 cd -
