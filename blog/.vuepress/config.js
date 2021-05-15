@@ -10,8 +10,47 @@ module.exports = {
     ['link', { rel: "shortcut icon", href: "/assets/favicons/favicon.ico"}],
     ['meta', { name: "msapplication-TileColor", content: "#51616b"}],
     ['meta', { name: "theme-color", content: "#ffffff"}],
+    ['meta', { name: "viewport", content: "width=device-width, initial-scale=1"}],
   ],
-  plugins: ['vuepress-plugin-seo', '@vuepress/back-to-top', '@vuepress/medium-zoom'],
+  plugins: [
+    'vuepress-plugin-seo', 
+    '@vuepress/back-to-top', 
+    '@vuepress/medium-zoom',
+    [ 'robots', 
+    {
+      /**
+       * @host
+       * Mandatory, You have to provide the host URL
+       */   
+      host: "https://natandias.github.io/myblog/",
+      /**
+       * @disallowAll
+       * Optional: if it's true, all others options are ignored and exclude all robots from the entire server
+       */
+      disallowAll: false,
+      /**
+       * @allowAll
+       * Optional: if it's true and @disallowAll is false, all others options are ignored and allow all robots complete access
+       */
+      allowAll: true,      
+      /**
+       * @sitemap
+       * Optional, by default: sitemap.xml
+       */ 
+      sitemap: "/sitemap.xml",
+      /**
+       * @policies
+       * Optional, by default: null
+       */ 
+      policies: [
+          {
+              userAgent: '*',
+              disallow: [],
+              allow: []
+          }
+      ]
+  },]
+  ],
   shouldPrefetch: () => false,
   base: "/myblog/",
   themeConfig: {
