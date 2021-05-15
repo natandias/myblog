@@ -16,6 +16,13 @@ module.exports = {
     'vuepress-plugin-seo', 
     '@vuepress/back-to-top', 
     '@vuepress/medium-zoom',
+    [
+      '@vuepress/pwa',
+      {
+        serviceWorker: true,
+        updatePopup: true
+      }
+    ],
     [ 'robots', 
     {
       /**
