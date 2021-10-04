@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Anotações sobre NuxtJs | Natan Dias</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="apple-touch-icon" sizes="180x180" href="/myblog/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/myblog/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/myblog/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/myblog/assets/favicons/site.webmanifest">
+    <link rel="shortcut icon" href="/myblog/assets/favicons/favicon.ico">
+    <link rel="alternate" type="application/rss+xml" href="https://natandias.github.io/myblog/rss.xml" title="Natan Dias RSS Feed">
+    <meta name="description" content="Algumas notas escritas enquanto estudava NuxtJS">
+    <meta property="article:published_time" content="2020-10-12T00:00:00.000Z">
+    <meta property="article:modified_time" content="2020-10-12T21:40:45.000Z">
+    <meta property="og:site_name" content="Natan Dias">
+    <meta property="og:title" content="Anotações sobre NuxtJs">
+    <meta property="og:description" content="Algumas notas escritas enquanto estudava NuxtJS">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/12/10/2020/nuxt/">
+    <meta name="twitter:title" content="Anotações sobre NuxtJs">
+    <meta name="twitter:description" content="Algumas notas escritas enquanto estudava NuxtJS">
+    <meta name="twitter:url" content="/12/10/2020/nuxt/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Vue, Nuxt, Javascript">
+    <meta property="article:tag" content="Vue">
+    <meta name="msapplication-TileColor" content="#51616b">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="preload" href="/myblog/assets/css/0.styles.7b998721.css" as="style"><link rel="preload" href="/myblog/assets/js/app.ac655f02.js" as="script"><link rel="preload" href="/myblog/assets/js/8.161aa75c.js" as="script"><link rel="preload" href="/myblog/assets/js/3.7e5a5686.js" as="script"><link rel="preload" href="/myblog/assets/js/12.97d36b78.js" as="script"><link rel="preload" href="/myblog/assets/js/9.4e2457df.js" as="script">
+    <link rel="stylesheet" href="/myblog/assets/css/0.styles.7b998721.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuepress-theme-blog__global-layout"><section id="header-wrapper"><header id="header"><div class="header-wrapper"><div class="title"><a href="/myblog/" class="nav-link home-link">Natan Dias </a></div> <div class="header-right-wrap"><ul class="nav"><li class="nav-item"><a href="/myblog/" class="nav-link">Início</a></li><li class="nav-item"><a href="/myblog/tag/" class="nav-link">Assuntos</a></li><li class="nav-item"><a href="/myblog/about/" class="nav-link">Sobre mim</a></li><li class="nav-item"><a href="https://natandias.github.io/myblog/rss.xml" target="_blank" rel="noopener noreferrer" class="nav-link external">RSS Feed</a></li></ul> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <a href="/myblog/rss.xml" class="feed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></div></div></header></section> <div id="mobile-header"><div class="mobile-header-bar"><div class="mobile-header-title"><a href="/myblog/" class="nav-link mobile-home-link">Natan Dias </a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div> <div class="mobile-menu-wrapper"><hr class="menu-divider"> <ul class="mobile-nav"><li class="mobile-nav-item"><a href="/myblog/" class="nav-link">Início</a></li><li class="mobile-nav-item"><a href="/myblog/tag/" class="nav-link">Assuntos</a></li><li class="mobile-nav-item"><a href="/myblog/about/" class="nav-link">Sobre mim</a></li><li class="mobile-nav-item"><a href="https://natandias.github.io/myblog/rss.xml" target="_blank" rel="noopener noreferrer" class="nav-link external">RSS Feed</a></li> <li class="mobile-nav-item"><a href="/myblog/rss.xml" class="feed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></li></ul></div></div></div> <div class="content-wrapper"><div id="vuepress-theme-blog__post-layout"><article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="vuepress-blog-theme-content"><header><h1 itemprop="name headline" class="post-title">
+        Anotações sobre NuxtJs
+      </h1> <div class="post-meta"><div itemprop="publisher author" itemtype="http://schema.org/Person" itemscope="itemscope" class="post-meta-author"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg> <span itemprop="name">natandias</span> <!----></div> <div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time pubdate itemprop="datePublished" datetime="2020-10-12T00:00:00.000Z">
+      12-10-2020
+    </time></div> <ul itemprop="keywords" class="post-meta-tags"><li class="post-tag" data-v-42ccfcd5><a href="/myblog/tag/Vue" data-v-42ccfcd5><span data-v-42ccfcd5>Vue</span></a></li><li class="post-tag" data-v-42ccfcd5><a href="/myblog/tag/Nuxt" data-v-42ccfcd5><span data-v-42ccfcd5>Nuxt</span></a></li><li class="post-tag" data-v-42ccfcd5><a href="/myblog/tag/Javascript" data-v-42ccfcd5><span data-v-42ccfcd5>Javascript</span></a></li></ul></div></header> <div itemprop="articleBody" class="content__default"><h2 id="criando-um-projeto"><a href="#criando-um-projeto" class="header-anchor">#</a> Criando um projeto</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> create nuxt-app <span class="token operator">&lt;</span>projectName<span class="token operator">&gt;</span>
+</code></pre></div><h2 id="estrutura-do-projeto"><a href="#estrutura-do-projeto" class="header-anchor">#</a> Estrutura do projeto</h2> <p><img src="/myblog/assets/img/structure.b850e192.png" alt="Estrutura"></p> <h2 id="como-usar-variaveis-css-ou-sass-global"><a href="#como-usar-variaveis-css-ou-sass-global" class="header-anchor">#</a> Como usar variáveis CSS ou SASS Global</h2> <ol><li>Instale o pacote @nuxtjs/style-resources;</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span> @nuxtjs/style-resources -D
+</code></pre></div><ol start="2"><li>Se for usar SASS, instale os pacotes &quot;node-sass&quot; e &quot;sass-loader&quot;.</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span> node-sass sass-loader -D
+</code></pre></div><ol start="3"><li><p>Dentro da pasta <em>assets,</em> crie uma pasta <em>styles</em>, e insira seu arquivo css global.</p></li> <li><p>No arquivo <em>nuxt.config.js,</em> edite as seguintes configurações:</p></li></ol> <div class="language-jsx extra-class"><pre class="language-jsx"><code>
+css<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;~/assets/styles/global.css&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+buildModules<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;@nuxtjs/style-resources&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+styleResources<span class="token operator">:</span> <span class="token punctuation">{</span>
+    scss<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;~/assets/styles/*.scss&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+ <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><ol start="5"><li>Pronto, tudo configurado, agora por exemplo, você pode colocar variáveis em global.css e usá-las em seus componentes.</li></ol> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token comment">// assets/styles/global.css</span>
+
+<span class="token operator">:</span>root <span class="token punctuation">{</span>
+  <span class="token operator">--</span>primary<span class="token operator">-</span>color<span class="token operator">:</span> red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token comment">// components/Navbar.vue</span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+nav {
+  background: var(--primary-color);
+}
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="como-usar-css-global"><a href="#como-usar-css-global" class="header-anchor">#</a> Como usar CSS Global</h2> <p>Insira o CSS em layouts/default.vue</p> <h2 id="editando-css-com-devtools-do-browser"><a href="#editando-css-com-devtools-do-browser" class="header-anchor">#</a> Editando CSS com DevTools do Browser</h2> <p>Para usar o DevTools com SASS sem bugs, adicione o seguinte código em <em>nuxt.config.js</em>.</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token comment">// nuxt.config.js</span>
+
+build<span class="token operator">:</span> <span class="token punctuation">{</span>
+    loaders<span class="token operator">:</span> <span class="token punctuation">{</span>
+      scss<span class="token operator">:</span> <span class="token punctuation">{</span> sourceMap<span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      vue<span class="token operator">:</span> <span class="token punctuation">{</span> cacheBusting<span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    cssSourceMap<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div></div> <footer><!----> <hr> <!----></footer></article> <div class="sticker vuepress-toc"><div class="vuepress-toc-item vuepress-toc-h2 active"><a href="#criando-um-projeto" title="Criando um projeto">Criando um projeto</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#estrutura-do-projeto" title="Estrutura do projeto">Estrutura do projeto</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#como-usar-variaveis-css-ou-sass-global" title="Como usar variáveis CSS ou SASS Global">Como usar variáveis CSS ou SASS Global</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#como-usar-css-global" title="Como usar CSS Global">Como usar CSS Global</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#editando-css-com-devtools-do-browser" title="Editando CSS com DevTools do Browser">Editando CSS com DevTools do Browser</a></div></div></div></div> <footer class="footer" data-v-3d9deeb8><div class="footer-left-wrap" data-v-3d9deeb8><ul class="contact" data-v-3d9deeb8><li class="contact-item" data-v-3d9deeb8><a href="https://github.com/natandias/" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-3d9deeb8><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github" data-v-3d9deeb8><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" data-v-3d9deeb8></path></svg>
+          
+        </a></li><li class="contact-item" data-v-3d9deeb8><a href="mailto:natandias@pm.me" class="nav-link external" data-v-3d9deeb8><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail" data-v-3d9deeb8><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" data-v-3d9deeb8></path><polyline points="22,6 12,13 2,6" data-v-3d9deeb8></polyline></svg>
+          
+        </a></li></ul></div> <div class="footer-right-wrap" data-v-3d9deeb8><ul class="copyright" data-v-3d9deeb8><li class="copyright-item" data-v-3d9deeb8>MIT Licensed</li></ul></div></footer></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/myblog/assets/js/app.ac655f02.js" defer></script><script src="/myblog/assets/js/8.161aa75c.js" defer></script><script src="/myblog/assets/js/3.7e5a5686.js" defer></script><script src="/myblog/assets/js/12.97d36b78.js" defer></script><script src="/myblog/assets/js/9.4e2457df.js" defer></script>
+  </body>
+</html>
