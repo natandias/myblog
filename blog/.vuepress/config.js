@@ -23,6 +23,18 @@ module.exports = {
         updatePopup: true
       }
     ],
+    [
+      'vuepress-plugin-rss',
+      {
+        base_url: '/', // required
+        site_url: 'https://natandias.github.io/myblog/', // required
+        copyright: '2021 Natan Dias', // optional
+        // filter some post
+        filter: (frontmatter) => { return [true|false] },
+        // How much articles
+        count: 20
+      }
+    ]
     [ 'robots', 
     {
       /**
