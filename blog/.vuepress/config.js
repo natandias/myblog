@@ -106,6 +106,7 @@ module.exports = {
     },
     feed: {
       canonical_base: "https://natandias.github.io/myblog/",
+      posts_directories: ["/_posts/"]
     },
     locales: {
       '/': {
