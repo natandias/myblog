@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Natan Dias',
-  theme: '@vuepress/theme-blog',
+  theme: '@vuepress/blog',
   description: 'Algumas anotações sobre tecnologia',
   head: [
     ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "/assets/favicons/apple-touch-icon.png"}],
@@ -23,18 +23,6 @@ module.exports = {
         updatePopup: true
       }
     ],
-    [
-      'vuepress-plugin-rss',
-      {
-        base_url: '/', // required
-        site_url: 'https://natandias.github.io/myblog/', // required
-        copyright: '2021 Natan Dias', // optional
-        // filter some post
-        filter: (frontmatter) => { return [true|false] },
-        // How much articles
-        count: 20
-      }
-    ]
     [ 'robots', 
     {
       /**
@@ -78,6 +66,7 @@ module.exports = {
       { text: 'Início', link: '/' },
       { text: 'Assuntos', link: '/tag/' },
       { text: 'Sobre mim', link: '/about/' },
+      { text: 'RSS Feed', link: 'https://natandias.github.io/myblog/rss.xml' }
     ],
     directories: [
       {
@@ -114,6 +103,9 @@ module.exports = {
     },
     sitemap: {
       hostname: 'https://natandias.github.io/myblog/',
+    },
+    feed: {
+      canonical_base: "https://natandias.github.io/myblog/",
     },
     locales: {
       '/': {
